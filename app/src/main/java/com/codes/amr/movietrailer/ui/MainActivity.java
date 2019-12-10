@@ -1,8 +1,10 @@
-package com.codes.amr.movietrailer;
+package com.codes.amr.movietrailer.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.codes.amr.movietrailer.R;
 
 public class MainActivity extends AppCompatActivity {
 
