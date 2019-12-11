@@ -1,9 +1,13 @@
 package com.codes.amr.movietrailer.data.model;
 
+import com.codes.amr.movietrailer.di.module.ApplicationModule;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Movie implements Serializable {
+
+    public static String IMAGE_URL = "https://image.tmdb.org/t/p/w500";
 
     private float popularity;
     private float vote_count;
@@ -28,7 +32,7 @@ public class Movie implements Serializable {
     }
 
     public float getVote_count() {
-        return vote_count;
+        return  vote_count;
     }
 
     public boolean getVideo() {
@@ -36,7 +40,7 @@ public class Movie implements Serializable {
     }
 
     public String getPoster_path() {
-        return poster_path;
+        return  IMAGE_URL + poster_path;
     }
 
     public float getId() {

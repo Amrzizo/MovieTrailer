@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MovieTrailer</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="the_MOVIE_NAME">Movie Name</string>
+    <string name="search">Search</string>
+    <string name="search_for_movies">Search for Movies</string>
+    <string name="read_more">Read more</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_available_reviews">No Available Reviews</string>
 </resources>

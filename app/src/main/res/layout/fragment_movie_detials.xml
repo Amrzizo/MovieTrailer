@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    tools:ignore="RtlCompat" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        tools:context="com.marwaeltayeb.movietrailer.activities.MovieActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/backdropImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_background" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/titleOfMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ratingOfMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_star_yellow"
+                android:textColor="#aeaeae"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/descriptionOfMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#1d1d1d"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:padding="5dp" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

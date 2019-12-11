@@ -14,13 +14,13 @@ import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication;
+import dagger.android.support.AndroidSupportInjectionModule;
 
 @Singleton
-@Component(modules = {ActivityBindingModule.class, ApplicationModule.class, ContextModule.class, ViewModelModule.class})
+@Component(modules = {ContextModule.class, ApplicationModule.class, AndroidSupportInjectionModule.class, ActivityBindingModule.class})
 public interface ApplicationComponent extends AndroidInjector<DaggerApplication> {
 
-
-    public void inject(BaseApplication baseApplication);
+    void inject(BaseApplication application);
 
     @Component.Builder
     interface Builder {

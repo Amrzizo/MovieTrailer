@@ -49,6 +49,13 @@ public class MovieApiResponse implements Serializable {
         this.total_pages = total_pages;
     }
 
+    public ArrayList<Movie> getResults() {
+        return results;
+    }
+
+    public void setResults(ArrayList<Movie> results) {
+        this.results = results;
+    }
 
     static class Dates {
         private String maximum;

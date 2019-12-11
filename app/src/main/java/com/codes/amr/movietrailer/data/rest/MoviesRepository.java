@@ -18,4 +18,9 @@ public class MoviesRepository {
     public Single<MovieApiResponse> getAllMovies(String sortBy, int page, String apiKey) {
         return moviesApiService.getAllMovies(sortBy, page, apiKey);
     }
+
+
+    public Single<MovieApiResponse> searchForMovies(String query, String apiKey) {
+        return moviesApiService.searchForMovies(query, apiKey);
+    }
 }

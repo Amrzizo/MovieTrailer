@@ -12,7 +12,7 @@ public interface MoviesApiService {
 
     String API_KEY ="a1d797c3cd4df492cf679f280ec434d7";
 
-    @GET("/movie/{filterBy}")
+    @GET("movie/{filterBy}")
     Single<MovieApiResponse>getAllMovies(@Path("filterBy") String sortBy, @Query("page") int page, @Query("api_key") String apiKey);
 
     @GET("search/movie")
